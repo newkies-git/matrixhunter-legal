@@ -1,156 +1,76 @@
-<!doctype html>
-<html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="index, follow" />
-    <title>MatrixHunter 개인정보처리방침</title>
-    <link rel="stylesheet" href="/style.css" />
-    <link rel="alternate" hreflang="en" href="/privacy/en.html" />
-    <link rel="alternate" hreflang="ko" href="/privacy/ko.html" />
-  </head>
-  <body>
-    <main class="container">
-      <article>
-        <h1>MatrixHunter 개인정보처리방침</h1>
-        <p class="meta">
-          최종 갱신일: 2026-05-08 · 적용 앱: MatrixHunter
-          (<code>com.matrixhunter.app</code>)
-        </p>
-
-        <p>
-          MatrixHunter(이하 “본 앱”)는 사용자의 개인정보를 중요하게 여깁니다. 본
-          문서는 본 앱이 어떤 정보를 다루는지, 누구와 공유하는지, 그리고
-          사용자가 가진 권리를 설명합니다. 본 앱은 개인 식별이 가능한 계정,
-          광고, 추적, 위치 정보, 카메라, 마이크, 연락처를 수집하지 않습니다.
-        </p>
-
-        <h2>1. 수집·저장하는 정보</h2>
-        <p>
-          본 앱은 사용자의 단말기(디바이스) 내부 저장소(AsyncStorage)에 다음
-          데이터만 저장합니다. 모든 데이터는 단말기를 떠나지 않으며, 외부 서버로
-          전송되지 않습니다.
-        </p>
-        <ul>
-          <li>
-            <code>@mh:settings</code> — 언어, 사운드, 햅틱 등 사용자 설정값
-          </li>
-          <li>
-            <code>@mh:in_progress_session</code> — 진행 중이던 게임 세션 스냅샷
-            (앱 재시작 시 이어하기 용도)
-          </li>
-          <li>
-            <code>@matrixhunter:history</code> — 종료된 게임 전적 (최대 50건)
-          </li>
-          <li><code>@mh:onboarded</code> — 첫 실행 가이드 표시 여부</li>
-          <li>
-            <code>@mh:last_match_id</code> — 직전 종료된 게임 식별자 (홈 화면
-            바로가기 용도)
-          </li>
-        </ul>
-        <p>
-          이 데이터는 모두 단말기 로컬에만 존재하며, 사용자가 앱을 삭제하거나
-          앱의 데이터 초기화를 수행하면 함께 제거됩니다.
-        </p>
-
-        <h2>2. 권한 사용</h2>
-        <ul>
-          <li><strong>진동(Vibration)</strong> — 게임 효과용 햅틱 피드백</li>
-          <li><strong>오디오 재생</strong> — 게임 효과음 재생</li>
-          <li>
-            <strong>공유 시트(Share Sheet)</strong> — 사용자가 명시적으로 결과
-            이미지를 공유할 때만 호출됨
-          </li>
-          <li>
-            <strong>인터넷</strong> — 아래 “3. 제3자 서비스” 항목에 명시된 경우
-            한정
-          </li>
-        </ul>
-        <p>
-          본 앱은 위치, 카메라, 마이크, 연락처, 광고 식별자(AAID), 외부 저장소
-          파일 접근 권한을 요구하지 않습니다.
-        </p>
-
-        <h2>3. 제3자 서비스</h2>
-
-        <h3>3.1 Sentry (오류 진단) — 선택적 활성화</h3>
-        <p>
-          본 앱은 프로덕션 빌드에서 충돌·오류 진단을 위해 Sentry SDK
-          (<code>@sentry/react-native</code>)를 통합할 수 있습니다. 이 기능은
-          빌드 시점의 환경 변수 <code>EXPO_PUBLIC_SENTRY_DSN</code>이 설정된
-          경우에만 활성화되며, 활성화 시 다음과 같은 정보가 Sentry로 전송될 수
-          있습니다.
-        </p>
-        <ul>
-          <li>오류 스택 트레이스 및 발생 화면 이름</li>
-          <li>운영체제 버전, 앱 버전, 단말기 모델</li>
-          <li>충돌 직전의 비식별 이벤트 로그</li>
-        </ul>
-        <p>
-          본 앱은 사용자의 이름, 이메일, 위치, 광고 식별자를 Sentry로 전송하지
-          않습니다.
-        </p>
-
-        <h3>3.2 Expo Updates (OTA 업데이트) — 선택적 활성화</h3>
-        <p>
-          본 앱은 <code>expo-updates</code> 모듈을 통한 OTA 업데이트를 지원할 수
-          있습니다. 이 기능이 활성화되어 있는 빌드에서는 앱 실행 시 EAS Update
-          서버에 업데이트 매니페스트 조회 요청이 발생할 수 있으며, 이 과정에서
-          Expo가 정한 비식별 메타데이터(런타임 버전, 채널, 플랫폼)가 송신됩니다.
-        </p>
-
-        <h2>4. 광고 및 추적</h2>
-        <p>
-          본 앱은 광고를 노출하지 않으며, 어떠한 추적기나 분석 도구를 통해
-          사용자 행동을 외부에 전송하지 않습니다.
-        </p>
-
-        <h2>5. 아동의 개인정보</h2>
-        <p>
-          본 앱은 13세 미만 아동을 직접적인 대상으로 하지 않습니다. 본 앱은
-          외부로 어떠한 개인 식별 정보도 수집·전송하지 않으므로 아동의
-          개인정보를 별도로 처리하지 않습니다.
-        </p>
-
-        <h2>6. 데이터 보관 및 삭제</h2>
-        <p>
-          본 앱이 저장하는 모든 정보는 단말기 로컬에만 존재합니다. 사용자는
-          언제든지 다음 방법으로 데이터를 삭제할 수 있습니다.
-        </p>
-        <ul>
-          <li>운영체제의 앱 설정에서 “저장 공간 → 데이터 지우기” 실행</li>
-          <li>본 앱 삭제 (Uninstall)</li>
-        </ul>
-
-        <h2>7. 개인정보처리방침 변경</h2>
-        <p>
-          본 정책은 법령, 서비스 변경, 기능 추가 시 갱신될 수 있습니다. 변경 시
-          본 페이지의 “최종 갱신일”이 함께 갱신됩니다.
-        </p>
-
-        <h2>8. 문의</h2>
-        <p>
-          본 정책 또는 본 앱의 개인정보 처리에 관한 문의는 다음 이메일로 연락해
-          주세요.
-        </p>
-        <p>
-          이메일:
-          <a href="mailto:support@matrixhunter.app">support@matrixhunter.app</a>
-        </p>
-
-        <p class="lang-switch">
-          English version: <a href="/privacy/en.html">Privacy Policy (EN)</a>
-        </p>
-      </article>
-
-      <footer>
-        <p class="muted">
-          &copy; <span id="year"></span> MatrixHunter. All rights reserved.
-        </p>
-      </footer>
-    </main>
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-  </body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2685.5">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px AppleMyungjo; -webkit-text-stroke: #000000}
+    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px AppleMyungjo; color: #0000e9; -webkit-text-stroke: #0000e9}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px AppleMyungjo; -webkit-text-stroke: #000000}
+    li.li5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px Menlo; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {font: 13.0px Menlo; font-kerning: none}
+    span.s3 {font: 13.0px Menlo; -webkit-text-stroke: 0px #000000}
+    span.s4 {-webkit-text-stroke: 0px #000000}
+    span.s5 {font: 12.0px AppleMyungjo; font-kerning: none}
+    span.s6 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
+    span.s7 {text-decoration: underline ; font-kerning: none}
+    span.s8 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">MatrixHunter 개인정보처리방침</span></h1>
+<p class="p2"><span class="s1">최종 갱신일: 2026-05-08 · 적용 앱: MatrixHunter (</span><span class="s2">com.matrixhunter.app</span><span class="s1">)</span></p>
+<p class="p2"><span class="s1">MatrixHunter(이하 “본 앱”)는 사용자의 개인정보를 중요하게 여깁니다. 본 문서는 본 앱이 어떤 정보를 다루는지, 누구와 공유하는지, 그리고 사용자가 가진 권리를 설명합니다. 본 앱은 개인 식별이 가능한 계정, 광고, 추적, 위치 정보, 카메라, 마이크, 연락처를 수집하지 않습니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">1. 수집·저장하는 정보</span></h2>
+<p class="p2"><span class="s1">본 앱은 사용자의 단말기(디바이스) 내부 저장소(AsyncStorage)에 다음 데이터만 저장합니다. 모든 데이터는 단말기를 떠나지 않으며, 외부 서버로 전송되지 않습니다.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s3"></span><span class="s2">@mh:settings</span><span class="s1"> — 언어, 사운드, 햅틱 등 사용자 설정값</span></li>
+  <li class="li4"><span class="s3"></span><span class="s2">@mh:in_progress_session</span><span class="s1"> — 진행 중이던 게임 세션 스냅샷 (앱 재시작 시 이어하기 용도)</span></li>
+  <li class="li5"><span class="s4"></span><span class="s1">@matrixhunter:history</span><span class="s5"> — 종료된 게임 전적 (최대 50건)</span></li>
+  <li class="li4"><span class="s3"></span><span class="s2">@mh:onboarded</span><span class="s1"> — 첫 실행 가이드 표시 여부</span></li>
+  <li class="li4"><span class="s3"></span><span class="s2">@mh:last_match_id</span><span class="s1"> — 직전 종료된 게임 식별자 (홈 화면 바로가기 용도)</span></li>
+</ul>
+<p class="p2"><span class="s1">이 데이터는 모두 단말기 로컬에만 존재하며, 사용자가 앱을 삭제하거나 앱의 데이터 초기화를 수행하면 함께 제거됩니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">2. 권한 사용</span></h2>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">진동(Vibration) — 게임 효과용 햅틱 피드백</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">오디오 재생 — 게임 효과음 재생</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">공유 시트(Share Sheet) — 사용자가 명시적으로 결과 이미지를 공유할 때만 호출됨</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">인터넷 — 아래 “3. 제3자 서비스” 항목에 명시된 경우 한정</span></li>
+</ul>
+<p class="p2"><span class="s1">본 앱은 위치, 카메라, 마이크, 연락처, 광고 식별자(AAID), 외부 저장소 파일 접근 권한을 요구하지 않습니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">3. 제3자 서비스</span></h2>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">3.1 Sentry (오류 진단) — 선택적 활성화</span></h3>
+<p class="p2"><span class="s1">본 앱은 프로덕션 빌드에서 충돌·오류 진단을 위해 Sentry SDK (</span><span class="s2">@sentry/react-native</span><span class="s1">)를 통합할 수 있습니다. 이 기능은 빌드 시점의 환경 변수 </span><span class="s2">EXPO_PUBLIC_SENTRY_DSN</span><span class="s1">이 설정된 경우에만 활성화되며, 활성화 시 다음과 같은 정보가 Sentry로 전송될 수 있습니다.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">오류 스택 트레이스 및 발생 화면 이름</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">운영체제 버전, 앱 버전, 단말기 모델</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">충돌 직전의 비식별 이벤트 로그</span></li>
+</ul>
+<p class="p2"><span class="s1">본 앱은 사용자의 이름, 이메일, 위치, 광고 식별자를 Sentry로 전송하지 않습니다.</span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">3.2 Expo Updates (OTA 업데이트) — 선택적 활성화</span></h3>
+<p class="p2"><span class="s1">본 앱은 </span><span class="s2">expo-updates</span><span class="s1"> 모듈을 통한 OTA 업데이트를 지원할 수 있습니다. 이 기능이 활성화되어 있는 빌드에서는 앱 실행 시 EAS Update 서버에 업데이트 매니페스트 조회 요청이 발생할 수 있으며, 이 과정에서 Expo가 정한 비식별 메타데이터(런타임 버전, 채널, 플랫폼)가 송신됩니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">4. 광고 및 추적</span></h2>
+<p class="p2"><span class="s1">본 앱은 광고를 노출하지 않으며, 어떠한 추적기나 분석 도구를 통해 사용자 행동을 외부에 전송하지 않습니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">5. 아동의 개인정보</span></h2>
+<p class="p2"><span class="s1">본 앱은 13세 미만 아동을 직접적인 대상으로 하지 않습니다. 본 앱은 외부로 어떠한 개인 식별 정보도 수집·전송하지 않으므로 아동의 개인정보를 별도로 처리하지 않습니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">6. 데이터 보관 및 삭제</span></h2>
+<p class="p2"><span class="s1">본 앱이 저장하는 모든 정보는 단말기 로컬에만 존재합니다. 사용자는 언제든지 다음 방법으로 데이터를 삭제할 수 있습니다.</span></p>
+<ul class="ul1">
+  <li class="li4"><span class="s4"></span><span class="s1">운영체제의 앱 설정에서 “저장 공간 → 데이터 지우기” 실행</span></li>
+  <li class="li4"><span class="s4"></span><span class="s1">본 앱 삭제 (Uninstall)</span></li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">7. 개인정보처리방침 변경</span></h2>
+<p class="p2"><span class="s1">본 정책은 법령, 서비스 변경, 기능 추가 시 갱신될 수 있습니다. 변경 시 본 페이지의 “최종 갱신일”이 함께 갱신됩니다.</span></p>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px AppleMyungjo; -webkit-text-stroke: #000000"><span class="s1">8. 문의</span></h2>
+<p class="p2"><span class="s1">본 정책 또는 본 앱의 개인정보 처리에 관한 문의는 다음 이메일로 연락해 주세요.</span></p>
+<p class="p7"><span class="s6">이메일: </span><span class="s7">newkies86@gmail.com</span></p>
+<p class="p7"><span class="s6">English version: <a href="file:///privacy/en.html"><span class="s8">Privacy Policy (EN)</span></a></span></p>
+<p class="p2"><span class="s1">© MatrixHunter. All rights reserved.</span></p>
+</body>
 </html>
