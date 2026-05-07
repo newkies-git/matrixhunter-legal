@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>MatrixHunter Legal</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>MatrixHunter</h1>
+        <p class="muted">Legal &amp; Privacy</p>
+      </header>
+
+      <section class="card">
+        <h2>Privacy Policy / 개인정보처리방침</h2>
+        <ul class="links">
+          <li><a href="/privacy/ko.html" hreflang="ko">한국어</a></li>
+          <li><a href="/privacy/en.html" hreflang="en">English</a></li>
+        </ul>
+      </section>
+
+      <footer>
+        <p class="muted">
+          &copy; <span id="year"></span> MatrixHunter. All rights reserved.
+        </p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
