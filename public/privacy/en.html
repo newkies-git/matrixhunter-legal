@@ -1,77 +1,170 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.5">
-  <style type="text/css">
-    p.p2 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
-    span.s1 {font-kerning: none}
-    span.s2 {font: 13.0px Menlo; font-kerning: none}
-    span.s3 {font: 13.0px Menlo; -webkit-text-stroke: 0px #000000}
-    span.s4 {-webkit-text-stroke: 0px #000000}
-    span.s5 {font: 12.0px 'Times New Roman'; font-kerning: none}
-    span.s6 {font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s7 {text-decoration: underline ; font-kerning: none}
-    span.s8 {font: 12.0px AppleMyungjo; font-kerning: none; color: #000000; -webkit-text-stroke: 0px #000000}
-    span.s9 {font: 12.0px AppleMyungjo; text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
-    span.s10 {text-decoration: underline ; font-kerning: none; -webkit-text-stroke: 0px #0000e9}
-    ul.ul1 {list-style-type: disc}
-  </style>
-</head>
-<body>
-<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>MatrixHunter Privacy Policy</b></span></h1>
-<p class="p2"><span class="s1">Last updated: 2026-05-08 · Applies to: MatrixHunter (</span><span class="s2">com.matrixhunter.app</span><span class="s1">)</span></p>
-<p class="p2"><span class="s1">MatrixHunter (the "App") respects your privacy. This document explains what information the App handles, with whom it is shared, and your rights as a user. The App does not collect personally identifiable accounts, advertising identifiers, location data, camera, microphone, or contact information.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>1. Information stored</b></span></h2>
-<p class="p2"><span class="s1">The App stores only the following data in the device's local storage (AsyncStorage). None of this data leaves your device and none is transmitted to a server operated by us.</span></p>
-<ul class="ul1">
-  <li class="li4"><span class="s3"></span><span class="s2">@mh:settings</span><span class="s1"> — User preferences such as language, sound, haptics</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">@mh:in_progress_session</span><span class="s1"> — Snapshot of an in-progress game session, used for resume on cold start</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">@matrixhunter:history</span><span class="s1"> — Finished game history (up to 50 entries)</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">@mh:onboarded</span><span class="s1"> — Whether the first-run guide has been shown</span></li>
-  <li class="li4"><span class="s3"></span><span class="s2">@mh:last_match_id</span><span class="s1"> — Identifier of the most recent finished match, used for a home-screen shortcut</span></li>
-</ul>
-<p class="p2"><span class="s1">All of the above is local-only and is removed when the App is uninstalled or when the user clears the App's data from system settings.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>2. Permissions</b></span></h2>
-<ul class="ul1">
-  <li class="li4"><span class="s4"><b></b></span><span class="s1"><b>Vibration</b> — Haptic feedback during gameplay</span></li>
-  <li class="li4"><span class="s4"><b></b></span><span class="s1"><b>Audio playback</b> — In-game sound effects</span></li>
-  <li class="li4"><span class="s4"><b></b></span><span class="s1"><b>Share sheet</b> — Invoked only when the user explicitly chooses to share a result image</span></li>
-  <li class="li4"><span class="s4"><b></b></span><span class="s1"><b>Internet</b> — Used only for the third-party integrations described in section 3 below</span></li>
-</ul>
-<p class="p2"><span class="s1">The App does not request location, camera, microphone, contacts, advertising ID (AAID), or external file storage permissions.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3. Third-party services</b></span></h2>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3.1 Sentry (crash diagnostics) — optional</b></span></h3>
-<p class="p2"><span class="s1">Production builds may integrate the Sentry SDK (</span><span class="s2">@sentry/react-native</span><span class="s1">) for crash and error diagnostics. This integration is enabled only when the build-time environment variable </span><span class="s2">EXPO_PUBLIC_SENTRY_DSN</span><span class="s1"> is set. When enabled, the following information may be transmitted to Sentry:</span></p>
-<ul class="ul1">
-  <li class="li4"><span class="s4"></span><span class="s1">Error stack traces and the screen name where the error occurred</span></li>
-  <li class="li4"><span class="s4"></span><span class="s1">Operating system version, app version, device model</span></li>
-  <li class="li4"><span class="s4"></span><span class="s1">Non-identifying breadcrumb events leading up to the error</span></li>
-</ul>
-<p class="p2"><span class="s1">The App does not send your name, email, location, or advertising identifier to Sentry.</span></p>
-<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>3.2 Expo Updates (over-the-air) — optional</b></span></h3>
-<p class="p2"><span class="s1">The App may use the </span><span class="s2">expo-updates</span><span class="s1"> module to deliver over-the-air updates. When this is enabled in a given build, the App contacts the EAS Update servers to fetch update manifests at launch. This request transmits non-identifying metadata such as runtime version, release channel, and platform.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>4. Advertising and tracking</b></span></h2>
-<p class="p2"><span class="s1">The App does not display advertisements and does not transmit user behavior to any tracking or analytics provider.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>5. Children's privacy</b></span></h2>
-<p class="p2"><span class="s1">The App is not directed to children under the age of 13. The App does not collect or transmit any personally identifying information, so no additional processing of children's information is performed.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>6. Data retention and deletion</b></span></h2>
-<p class="p2"><span class="s1">All information stored by the App resides locally on your device. You may delete it at any time by:</span></p>
-<ul class="ul1">
-  <li class="li4"><span class="s4"></span><span class="s1">Going to your device's app settings and choosing "Storage </span><span class="s5">→</span><span class="s1"> Clear data"</span></li>
-  <li class="li4"><span class="s4"></span><span class="s1">Uninstalling the App</span></li>
-</ul>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>7. Changes to this policy</b></span></h2>
-<p class="p2"><span class="s1">This policy may be updated to reflect changes in law, the service, or new features. The "Last updated" date at the top of this page will be revised when the policy changes.</span></p>
-<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; -webkit-text-stroke: #000000"><span class="s1"><b>8. Contact</b></span></h2>
-<p class="p2"><span class="s1">For questions about this policy or the App's handling of personal information, please contact us at:</span></p>
-<p class="p6"><span class="s6">Email: </span><span class="s7">newkies86@gmail.com</span></p>
-<p class="p6"><span class="s8">한국어</span><span class="s6"> </span><span class="s8">버전</span><span class="s6">: <a href="file:///privacy/ko.html"><span class="s9">개인정보처리방침</span><span class="s10"> (KO)</span></a></span></p>
-<p class="p2"><span class="s1">© MatrixHunter. All rights reserved.</span></p>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow" />
+    <title>MatrixHunter Privacy Policy</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="alternate" hreflang="en" href="/privacy/en.html" />
+    <link rel="alternate" hreflang="ko" href="/privacy/ko.html" />
+  </head>
+  <body>
+    <main class="container">
+      <article>
+        <h1>MatrixHunter Privacy Policy</h1>
+        <p class="meta">
+          Last updated: 2026-05-08 · Applies to: MatrixHunter
+          (<code>com.matrixhunter.app</code>)
+        </p>
+
+        <p>
+          MatrixHunter (the "App") respects your privacy. This document explains
+          what information the App handles, with whom it is shared, and your
+          rights as a user. The App does not collect personally identifiable
+          accounts, advertising identifiers, location data, camera, microphone,
+          or contact information.
+        </p>
+
+        <h2>1. Information stored</h2>
+        <p>
+          The App stores only the following data in the device's local storage
+          (AsyncStorage). None of this data leaves your device and none is
+          transmitted to a server operated by us.
+        </p>
+        <ul>
+          <li>
+            <code>@mh:settings</code> — User preferences such as language,
+            sound, haptics
+          </li>
+          <li>
+            <code>@mh:in_progress_session</code> — Snapshot of an in-progress
+            game session, used for resume on cold start
+          </li>
+          <li>
+            <code>@matrixhunter:history</code> — Finished game history (up to 50
+            entries)
+          </li>
+          <li>
+            <code>@mh:onboarded</code> — Whether the first-run guide has been
+            shown
+          </li>
+          <li>
+            <code>@mh:last_match_id</code> — Identifier of the most recent
+            finished match, used for a home-screen shortcut
+          </li>
+        </ul>
+        <p>
+          All of the above is local-only and is removed when the App is
+          uninstalled or when the user clears the App's data from system
+          settings.
+        </p>
+
+        <h2>2. Permissions</h2>
+        <ul>
+          <li><strong>Vibration</strong> — Haptic feedback during gameplay</li>
+          <li><strong>Audio playback</strong> — In-game sound effects</li>
+          <li>
+            <strong>Share sheet</strong> — Invoked only when the user explicitly
+            chooses to share a result image
+          </li>
+          <li>
+            <strong>Internet</strong> — Used only for the third-party
+            integrations described in section 3 below
+          </li>
+        </ul>
+        <p>
+          The App does not request location, camera, microphone, contacts,
+          advertising ID (AAID), or external file storage permissions.
+        </p>
+
+        <h2>3. Third-party services</h2>
+
+        <h3>3.1 Sentry (crash diagnostics) — optional</h3>
+        <p>
+          Production builds may integrate the Sentry SDK
+          (<code>@sentry/react-native</code>) for crash and error diagnostics.
+          This integration is enabled only when the build-time environment
+          variable <code>EXPO_PUBLIC_SENTRY_DSN</code> is set. When enabled, the
+          following information may be transmitted to Sentry:
+        </p>
+        <ul>
+          <li>
+            Error stack traces and the screen name where the error occurred
+          </li>
+          <li>Operating system version, app version, device model</li>
+          <li>Non-identifying breadcrumb events leading up to the error</li>
+        </ul>
+        <p>
+          The App does not send your name, email, location, or advertising
+          identifier to Sentry.
+        </p>
+
+        <h3>3.2 Expo Updates (over-the-air) — optional</h3>
+        <p>
+          The App may use the <code>expo-updates</code> module to deliver
+          over-the-air updates. When this is enabled in a given build, the App
+          contacts the EAS Update servers to fetch update manifests at launch.
+          This request transmits non-identifying metadata such as runtime
+          version, release channel, and platform.
+        </p>
+
+        <h2>4. Advertising and tracking</h2>
+        <p>
+          The App does not display advertisements and does not transmit user
+          behavior to any tracking or analytics provider.
+        </p>
+
+        <h2>5. Children's privacy</h2>
+        <p>
+          The App is not directed to children under the age of 13. The App does
+          not collect or transmit any personally identifying information, so no
+          additional processing of children's information is performed.
+        </p>
+
+        <h2>6. Data retention and deletion</h2>
+        <p>
+          All information stored by the App resides locally on your device. You
+          may delete it at any time by:
+        </p>
+        <ul>
+          <li>
+            Going to your device's app settings and choosing "Storage → Clear
+            data"
+          </li>
+          <li>Uninstalling the App</li>
+        </ul>
+
+        <h2>7. Changes to this policy</h2>
+        <p>
+          This policy may be updated to reflect changes in law, the service, or
+          new features. The "Last updated" date at the top of this page will be
+          revised when the policy changes.
+        </p>
+
+        <h2>8. Contact</h2>
+        <p>
+          For questions about this policy or the App's handling of personal
+          information, please contact us at:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:newkies86@gmail.com">newkies86@gmail.com</a>
+        </p>
+
+        <p class="lang-switch">
+          한국어 버전: <a href="/privacy/ko.html">개인정보처리방침 (KO)</a>
+        </p>
+      </article>
+
+      <footer>
+        <p class="muted">
+          &copy; <span id="year"></span> MatrixHunter. All rights reserved.
+        </p>
+      </footer>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

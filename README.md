@@ -58,5 +58,6 @@ python3 -m http.server -d public 8080
 
 ## 연락처
 
-문서 내 안내 이메일 (`support@matrixhunter.app`)이 실제 운용 중인 주소가
-아니라면, 두 정책 페이지 하단의 이메일을 실제 주소로 교체해 주세요.
+문서 내 안내 이메일은 `newkies86@gmail.com`으로 설정되어 있습니다. 운영
+주소를 바꾸려면 두 정책 페이지 하단의 `mailto:` 링크와 표시 텍스트를 함께
+교체해 주세요.
